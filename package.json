@@ -4,10 +4,14 @@
   "scripts": {
     "postinstall": "keystone postinstall",
     "dev": "next dev",
-    "build": "next build",
+    "build": "nvm use 16.13.1 && next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "16.13.1"
+  },
+  "engineStrict": true,
   "dependencies": {
     "@keystone-6/auth": "^1.0.0",
     "@keystone-6/core": "^1.0.0",
